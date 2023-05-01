@@ -21,6 +21,7 @@
         .navbar-link .container .nav-scroller>nav>a:hover,
         .navbar-link .container .nav-scroller>nav>a:focus {
             color: var(--bs-danger);
+            text-decoration: none;
         }
 
         .feature .img-thumbnail {
@@ -34,6 +35,45 @@
 
         .feature img {
             max-width: 100%;
+        }
+
+        .card-items .card-body a:hover {
+            color: var(--bs-danger);
+            text-decoration: none;
+        }
+
+        .icon-link {
+            padding-right: 0.25rem;
+            /* thu nhỏ khoảng cách giữa icon và text */
+        }
+
+        .icon-link svg {
+            transition: transform 0.2s ease-in-out;
+            /* thêm animation cho biểu tượng */
+        }
+
+        .icon-link:hover svg {
+            transform: translateX(0.25rem);
+            /* chuyển động sang phải khi hover */
+        }
+
+        .feature {
+            /* Giới hạn chiều rộng của phần tử feature */
+            max-width: 200px;
+            /* Căn giữa phần tử feature */
+            margin: 0 auto;
+        }
+
+        .feature a,
+        .feature p {
+            /* Giới hạn chiều rộng của phần tử a và p */
+            max-width: 100%;
+            /* Giữ chữ không bị ngắt ở cùng một dòng */
+            white-space: nowrap;
+            /* Ẩn các phần tử vượt quá kích thước của phần tử cha */
+            overflow: hidden;
+            /* Thêm dấu ba chấm (...) ở cuối khi chữ quá dài */
+            text-overflow: ellipsis;
         }
     </style>
 </head>
@@ -103,7 +143,6 @@
         </div>
     </div>
 
-
     <div class="page-lead">
         <div class="container-lg pb-3 my-3">
             <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
@@ -120,7 +159,7 @@
     <div class="recommended-items">
         <div class="container px-3 py-3" id="featured-3">
             <h2 class="pb-2">Recommended items for you</h2>
-            <div class="row g-4 pb-4 row-cols-1 row-cols-lg-5">
+            <div class="row g-4 pb-4 mt-4 row-cols-1 row-cols-lg-5">
                 <div class="feature col">
                     <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
                     <a href="#" class="icon-link mt-2 text-danger text-wrap">
@@ -197,20 +236,12 @@
                                 up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card shadow">
-                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <a href="#" class="card-title ">Card title</a>
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
-                                up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="icon-link link-secondary text-danger">Go somewhere<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
                         </div>
                     </div>
                 </div>
@@ -223,10 +254,16 @@
                                 up the bulk
                                 of
                                 the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="icon-link link-secondary text-danger">Go somewhere<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-6 col-md-3">
                     <div class="card shadow">
                         <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
@@ -236,11 +273,124 @@
                                 up the bulk
                                 of
                                 the card's content.</p>
+                            <a href="#" class="icon-link link-secondary text-danger">Go somewhere<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card shadow">
+                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Card title</a>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="icon-link link-secondary text-danger">Go somewhere<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frequently-viewed-items">
+        <div class="container px-3 py-3" id="featured-3">
+            <h2 class="pb-2">Frequently viewed items</h2>
+            <div class="row g-4 pb-4 mt-4 row-cols-1 row-cols-lg-5">
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap text-truncate">
+                        The Rules of Attraction
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        Imperial Bedrooms (Vintage Contemporaries)
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        Glamorama (Vintage Contemporaries)
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        The Rules of Attraction
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        The Rules of Attraction
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thing-we-have">
+        <div class="container alert-danger rounded-2 py-2">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/images/template/thingwehave.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
