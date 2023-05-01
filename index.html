@@ -17,12 +17,30 @@
         .form-control {
             width: 20rem;
         }
+
+        .navbar-link .container .nav-scroller>nav>a:hover,
+        .navbar-link .container .nav-scroller>nav>a:focus {
+            color: var(--bs-danger);
+        }
+
+        .feature .img-thumbnail {
+            width: 50%;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature img {
+            max-width: 100%;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <header class="p-3 mb-3 border-bottom">
+        <header class="p-3 border-bottom">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="./index.html"
@@ -38,8 +56,8 @@
 
                     <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <form class="d-flex" role="search">
-                            <input class="form-control" type="search" placeholder="Enter keyword, title, author or ISBN"
-                                aria-label="Search">
+                            <input class="form-control " type="search"
+                                placeholder="Enter keyword, title, author or ISBN" aria-label="Search">
                             <button class="btn btn-outline-danger" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="16" height="16" fill="currentColor" class="bi bi-search mx-auto"
                                     viewBox="0 0 16 16">
@@ -49,22 +67,6 @@
                         </form>
                     </div>
 
-                    <!-- <div class="dropdown text-end">
-                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
-                                class="rounded-circle">
-                        </a>
-                        <ul class="dropdown-menu text-small">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div> -->
                     <ul class="nav nav-pills">
                         <li class="nav-item"><a href="#" class="nav-link btn-outline-danger">Sign in</a></li>
                         <li class="nav-item"><a href="#" class="nav-link btn-outline-danger">My Account</a></li>
@@ -77,21 +79,178 @@
                         <li class="nav-item"><a href="#" class="nav-link btn-outline-danger">Help</a></li>
                     </ul>
                 </div>
+
             </div>
         </header>
     </div>
 
-
-    <div class="container">
-        <div class="d-flex">
-            <div class="p-2 flex-fill">Flex item with a lot of content</div>
-            <div class="p-2 flex-fill">Flex item</div>
-            <div class="p-2 flex-fill">Flex item</div>
-            <div class="p-2 flex-fill">Flex item</div>
-            <div class="p-2 flex-fill">Flex item</div>
-            <div class="p-2 flex-fill">Flex item</div>
+    <div class="main-navigation">
+        <div class="navbar-link border-bottom">
+            <div class="container">
+                <div class="nav-scroller">
+                    <nav class="nav d-flex justify-content-between">
+                        <a class="p-2 link-secondary" href="#">World</a>
+                        <a class="p-2 link-secondary" href="#">U.S.</a>
+                        <a class="p-2 link-secondary" href="#">Technology</a>
+                        <a class="p-2 link-secondary" href="#">Design</a>
+                        <a class="p-2 link-secondary" href="#">Culture</a>
+                        <a class="p-2 link-secondary" href="#">Business</a>
+                        <a class="p-2 link-secondary" href="#">Politics</a>
+                        <a class="p-2 link-secondary" href="#">Opinion</a>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <div class="page-lead">
+        <div class="container-lg pb-3 my-3">
+            <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
+                <div class="bg-body-tertiary border rounded-3">
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <div class="bg-body-tertiary border rounded-3">
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommended-items">
+        <div class="container px-3 py-3" id="featured-3">
+            <h2 class="pb-2">Recommended items for you</h2>
+            <div class="row g-4 pb-4 row-cols-1 row-cols-lg-5">
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        The Rules of Attraction
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        Imperial Bedrooms (Vintage Contemporaries)
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        Glamorama (Vintage Contemporaries)
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        The Rules of Attraction
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+                <div class="feature col">
+                    <img src="./assets/images/template/book1.jpg" alt="1" class="img-thumbnail mx-auto d-block">
+                    <a href="#" class="icon-link mt-2 text-danger text-wrap">
+                        The Rules of Attraction
+                    </a>
+                    <p class="m-0">Ellis, Bret Easton</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container alert-danger rounded-2">
+        <div class="row">
+            <div class="col m-4">
+                <img src="./assets/images/template/imagemedia.webp" alt="placeholder image" class="w-100 rounded-2">
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <div class="p-3">
+                    <a href="#" class="text-danger fw-bold">
+                        BOOKS
+                    </a>
+                    <h3 class="display-6 fw-bold">The Newbery Medal winners</h3>
+                    <p>Amina Luqman-Dawson, author of Freewater, has won the 2023 Newbery Medal for excellence in
+                        American children's literature. Learn more about Amina's historical novel and see all the past
+                        winners since 1922. The list includes Kate DiCamillo, Beverly Cleary, and Lois Lowry.</p>
+                    <button class="btn btn-outline-danger rounded-5">Click me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-items">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card shadow">
+                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Card title</a>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card shadow">
+                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title ">Card title</a>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card shadow">
+                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Card title</a>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card shadow">
+                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Card title</a>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                                up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
 
