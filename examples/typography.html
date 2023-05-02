@@ -49,23 +49,37 @@
                 </div>
                 <ul class="nav">
                     <li>
-                        <a class="nav-link" href="dashboard.html">
+                        <a class="nav-link" href="./user.html">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Edit Admin Profile</p>
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="./user.html">
-                            <i class="nc-icon nc-circle-09"></i>
-                            <p>Users Management</p>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="nc-icon nc-circle-09"></i>
+                          <p>Users</p>
                         </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./table.html">
-                            <i class="nc-icon nc-notes"></i>
-                            <p>Books Management</p>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Xem danh sách users</a></li>
+                          <li><a class="dropdown-item" href="#">Thêm user</a></li>
+                          <li><a class="dropdown-item" href="#">Chỉnh sửa user</a></li>
+                          <li><a class="dropdown-item" href="#">Xóa users</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="nc-icon nc-notes"></i>
+                          <p>Books</p>
                         </a>
-                    </li>
+                        <div class="dropdown-menu" aria-labelledby="booksDropdown">
+                          <a class="dropdown-item" href="#">Xem danh sách sách</a>
+                          <a class="dropdown-item" href="#">Thêm sách</a>
+                          <a class="dropdown-item" href="#">Sửa thông tin sách</a>
+                          <a class="dropdown-item" href="#">Xóa sách</a>
+                        </div>
+                      </li>
+                      
                     <li>
                         <a class="nav-link" href="./typography.html">
                             <i class="nc-icon nc-paper-2"></i>
@@ -164,7 +178,7 @@
                 </div>
             </nav>
             <!-- End Navbar -->
-            <div class="content">
+            <!-- <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
@@ -281,8 +295,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <footer class="footer">
+            </div> -->
+            <!-- <footer class="footer">
                 <div class="container-fluid">
                     <nav>
                         <ul class="footer-menu">
@@ -318,7 +332,7 @@
                 </div>
             </footer>
         </div>
-    </div>
+    </div> -->
     <!--   -->
     <!-- <div class="fixed-plugin">
     <div class="dropdown show-dropdown">

@@ -500,23 +500,43 @@ demo = {
         marker.setMap(map);
     },
 
-    showNotification: function(from, align) {
-        color = Math.floor((Math.random() * 4) + 1);
+    // showNotification: function(from, align) {
+    //     color = Math.floor((Math.random() * 4) + 1);
 
-        $.notify({
-            icon: "nc-icon nc-app",
-            message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+    //     $.notify({
+    //         icon: "nc-icon nc-app",
+    //         message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
 
-        }, {
-            type: type[color],
-            timer: 8000,
-            placement: {
-                from: from,
-                align: align
-            }
-        });
+    //     }, {
+    //         type: type[color],
+    //         timer: 8000,
+    //         placement: {
+    //             from: from,
+    //             align: align
+    //         }
+    //     });
     }
+    
+    // $(document).ready(function() {
+    //     $('.nav-link.dropdown-toggle').click(function(e) {
+    //         e.preventDefault();
+    //         $(this).next('.dropdown-menu').slideToggle();
+    //         $(this).parent().toggleClass('active');
+    //     });
+    // })
+    // $(document).ready(function(){
+    //     $('.pass_show').append('<span class="ptxt">Show</span>');  
+    //     });
+          
+        
+    //     $(document).on('click','.pass_show .ptxt', function(){ 
+        
+    //     $(this).text($(this).text() == "Show" ? "Hide" : "Show"); 
+        
+    //     $(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+        
+    //     });  
 
 
 
-}
+

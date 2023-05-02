@@ -1,17 +1,4 @@
-<!--
-=========================================================
- Light Bootstrap Dashboard - v2.0.1
-=========================================================
 
- Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard
- Copyright 2019 Creative Tim (https://www.creative-tim.com)
- Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard/blob/master/LICENSE)
-
- Coded by Creative Tim
-
-=========================================================
-
- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +16,6 @@
     <!-- CSS Files -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/css/demo.css" rel="stylesheet" />
 </head>
 
@@ -49,23 +35,39 @@
                 </div>
                 <ul class="nav">
                     <li>
-                        <a class="nav-link" href="dashboard.html">
+                        <a class="nav-link" href="./user.html">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Edit Admin Profile</p>
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="./user.html">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="nc-icon nc-circle-09"></i>
-                            <p>Users Management</p>
+                            <p>Users</p>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./usermanagement.html">Xem danh sách users</a></li>
+                            <li><a class="dropdown-item" href="#">Thêm user</a></li>
+                            <li><a class="dropdown-item" href="#">Chỉnh sửa user</a></li>
+                            <li><a class="dropdown-item" href="#">Xóa users</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="nav-link" href="./table.html">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="nc-icon nc-notes"></i>
-                            <p>Books Management</p>
+                            <p>Books</p>
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="booksDropdown">
+                            <a class="dropdown-item" href="#">Xem danh sách sách</a>
+                            <a class="dropdown-item" href="#">Thêm sách</a>
+                            <a class="dropdown-item" href="#">Sửa thông tin sách</a>
+                            <a class="dropdown-item" href="#">Xóa sách</a>
+                        </div>
                     </li>
+
                     <li>
                         <a class="nav-link" href="./typography.html">
                             <i class="nc-icon nc-paper-2"></i>
@@ -78,12 +80,12 @@
                             <p>Revenue Statistics</p>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <!-- <li class="nav-item active">
                         <a class="nav-link" href="./maps.html">
                             <i class="nc-icon nc-pin-3"></i>
                             <p>Maps</p>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="nav-link" href="./notifications.html">
                             <i class="nc-icon nc-bell-55"></i>
@@ -97,7 +99,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#pablo"> User </a>
+                    <a class="navbar-brand" href="#pablo"> AdminProfile </a>
                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
@@ -112,7 +114,7 @@
                                     <span class="d-lg-none">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="dropdown nav-item">
+                            <!-- <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                     <i class="nc-icon nc-planet"></i>
                                     <span class="notification">5</span>
@@ -131,34 +133,34 @@
                                     <i class="nc-icon nc-zoom-split"></i>
                                     <span class="d-lg-block">&nbsp;Search</span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#pablo">
                                     <span class="no-icon">Account</span>
                                 </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="http://example.com"
+                            </li> -->
+                            <ul class="nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#pablo">
+                                    <img src="../assets/img/Ngô Đức Quốc Khánh.jpg"  style="width:50px; height: 50px; border-radius: 50%;" alt="">
+                                  </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="http://example.com"
                                     id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
-                                    <span class="no-icon">Dropdown</span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
-                                    <span class="no-icon">Log out</span>
-                                </a>
-                            </li>
+                                    User Name
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Change avatar</a>
+                                    <a class="dropdown-item" href="./changepassword.html">Change Password</a>
+                                    <a class="dropdown-item" href="#">Log out</a>
+                                  </div>
+                                </li>
+                              </ul>
+                              
                         </ul>
                     </div>
                 </div>
@@ -177,16 +179,16 @@
                                         <div class="row">
                                             <div class="col-md-5 pr-1">
                                                 <div class="form-group">
-                                                    <label>Company (disabled)</label>
+                                                    <label>Shop (disabled)</label>
                                                     <input type="text" class="form-control" disabled=""
-                                                        placeholder="Company" value="Creative Code Inc.">
+                                                        placeholder="Company" value="AbeBookStoreInc.">
                                                 </div>
                                             </div>
                                             <div class="col-md-3 px-1">
                                                 <div class="form-group">
                                                     <label>Username</label>
                                                     <input type="text" class="form-control" placeholder="Username"
-                                                        value="michael23">
+                                                        value="quockhanh">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 pl-1">
@@ -201,14 +203,14 @@
                                                 <div class="form-group">
                                                     <label>First Name</label>
                                                     <input type="text" class="form-control" placeholder="Company"
-                                                        value="Mike">
+                                                        value="Ngô Đức">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 pl-1">
                                                 <div class="form-group">
                                                     <label>Last Name</label>
                                                     <input type="text" class="form-control" placeholder="Last Name"
-                                                        value="Andrew">
+                                                        value="QKhanh">
                                                 </div>
                                             </div>
                                         </div>
@@ -217,39 +219,39 @@
                                                 <div class="form-group">
                                                     <label>Address</label>
                                                     <input type="text" class="form-control" placeholder="Home Address"
-                                                        value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                        value="Quốc Khánh">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4 pr-1">
+                                            <div class="col-md-5 pr-1">
                                                 <div class="form-group">
-                                                    <label>City</label>
+                                                    <label>Số điện thoại</label>
                                                     <input type="text" class="form-control" placeholder="City"
-                                                        value="Mike">
+                                                        value="0399120983">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 px-1">
+                                            <!-- <div class="col-md-6 px-1">
                                                 <div class="form-group">
                                                     <label>Country</label>
                                                     <input type="text" class="form-control" placeholder="Country"
                                                         value="Andrew">
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4 pl-1">
+                                            </div> -->
+                                            <!-- <div class="col-md-4 pl-1">
                                                 <div class="form-group">
                                                     <label>Postal Code</label>
                                                     <input type="number" class="form-control" placeholder="ZIP Code">
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label>About Me</label>
+                                                    <label>Status</label>
                                                     <textarea rows="4" cols="80" class="form-control"
                                                         placeholder="Here can be your description"
-                                                        value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                        value="Mike">30/4 with PBL =</textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -269,18 +271,18 @@
                                 <div class="card-body">
                                     <div class="author">
                                         <a href="#">
-                                            <img class="avatar border-gray" src="../assets/img/faces/face-3.jpg"
+                                            <img class="avatar border-gray" src="../assets/img/Ngô Đức Quốc Khánh.jpg"
                                                 alt="...">
-                                            <h5 class="title">Mike Andrew</h5>
+                                            <h5 class="title">QuocKhanh</h5>
                                         </a>
                                         <p class="description">
-                                            michael24
+                                            saitama1234
                                         </p>
                                     </div>
                                     <p class="description text-center">
-                                        "Lamborghini Mercy
-                                        <br> Your chick she so thirsty
-                                        <br> I'm in that two seat Lambo"
+                                         am
+                                        <br> so 
+                                        <br> lazy
                                     </p>
                                 </div>
                                 <hr>
