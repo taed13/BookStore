@@ -12,6 +12,10 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+        integrity="sha512-Aa5NbVxSAbFWfkaXjXdnIL1Dd7sh4p4OuAtum7KCr5G+uV7Sf2Q8dqosKtbI1+67D4J4VCN01qm4+6BilCjJ/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <style>
         .form-control {
@@ -75,17 +79,38 @@
             /* Thêm dấu ba chấm (...) ở cuối khi chữ quá dài */
             text-overflow: ellipsis;
         }
+
+        /* .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: skewX(-20deg);
+        }
+
+        .carousel-caption h5,
+        .carousel-caption p {
+            transform: skewX(20deg);
+        } */
+        .carousel-button {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <header class="p-3 border-bottom">
+        <header class="p-3 border-bottom" id="top-header">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="./index.html"
                         class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor"
                             class="bi bi-book text-danger" viewBox="0 0 16 16">
                             <path
@@ -144,15 +169,76 @@
     </div>
 
     <div class="page-lead">
-        <div class="container-lg pb-3 my-3">
-            <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
-                <div class="bg-body-tertiary border rounded-3">
-                    <br><br><br><br><br><br><br><br><br><br>
+        <div class="container-lg mt-4">
+            <div class="row">
+                <div class="col-md-4 alert-danger rounded-3">
+                    <!-- Cột đầu tiên -->
+                    <div class="p-3">
+                        <h3 class="display-6 fw-bold">The Newbery Medal winners</h3>
+                        <p>Amina Luqman-Dawson, author of Freewater, has won the 2023 Newbery Medal for excellence in
+                            American children's literature. Learn more about Amina's historical novel and see all the
+                            past
+                            winners since 1922. The list includes Kate DiCamillo, Beverly Cleary, and Lois Lowry.</p>
+                        <button class="btn btn-outline-danger rounded-5 px-3">See the features</button>
+                    </div>
                 </div>
-                <div class="bg-body-tertiary border rounded-3">
-                    <br><br><br><br><br><br><br><br><br><br>
+
+                <div class="col-md-8 rounded-2 pl-3 position-relative">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div style="position: relative; height: 100%;">
+                                    <img src="./assets/images/template/pagelead.webp" alt="Slide 1"
+                                        class="img-fluid h-100 w-100 rounded-3"
+                                        style="padding-bottom: 17vh; max-height: 100%; height: auto;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="position: relative; height: 100%;">
+                                    <img src="./assets/images/template/pagelead.webp" alt="Slide 2"
+                                        class="img-fluid h-100 w-100 rounded-3"
+                                        style="padding-bottom: 17vh; max-height: 100%; height: auto;">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div style="position: relative; height: 100%;">
+                                    <img src="./assets/images/template/pagelead.webp" alt="Slide 3"
+                                        class="img-fluid h-100 w-100 rounded-3"
+                                        style="padding-bottom: 17vh; max-height: 100%; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end" style="position: absolute; bottom: 0; right: 0;">
+                            <button class="btn btn-secondary me-2 bg-danger carousel-button" type="button"
+                                data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="btn btn-secondary bg-danger carousel-button" type="button"
+                                data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="col-md-12 col-lg-10 alert-light position-absolute bottom-0 left-0 rounded-right pt-4 pr-4">
+                        <div class="position-relative h-100">
+                            <h3>The world's most valuable children's books</h3>
+                            <p>Children's books can be valuable if they are the right edition in the right condition.
+                                Discover 10 books that command high prices.
+                            </p>
+                            <h3>Carousel content</h3>
+                            <p>This is the content to be displayed in the carousel.</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -216,7 +302,8 @@
                     </a>
                     <h3 class="display-6 fw-bold">The Newbery Medal winners</h3>
                     <p>Amina Luqman-Dawson, author of Freewater, has won the 2023 Newbery Medal for excellence in
-                        American children's literature. Learn more about Amina's historical novel and see all the past
+                        American children's literature. Learn more about Amina's historical novel and see all the
+                        past
                         winners since 1922. The list includes Kate DiCamillo, Beverly Cleary, and Lois Lowry.</p>
                     <button class="btn btn-outline-danger rounded-5 px-3">See the list</button>
                 </div>
@@ -232,7 +319,8 @@
                         <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="#" class="card-title">Card title</a>
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                            <p class="card-text text-muted">Some quick example text to build on the card title and
+                                make
                                 up the bulk
                                 of
                                 the card's content.</p>
@@ -250,26 +338,8 @@
                         <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="#" class="card-title">Card title</a>
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
-                                up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="icon-link link-secondary text-danger">Go somewhere<svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="card shadow">
-                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <a href="#" class="card-title">Card title</a>
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                            <p class="card-text text-muted">Some quick example text to build on the card title and
+                                make
                                 up the bulk
                                 of
                                 the card's content.</p>
@@ -288,7 +358,28 @@
                         <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="#" class="card-title">Card title</a>
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
+                            <p class="card-text text-muted">Some quick example text to build on the card title and
+                                make
+                                up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="icon-link link-secondary text-danger">Go somewhere<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card shadow">
+                        <img src="./assets/images/template/cardimage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Card title</a>
+                            <p class="card-text text-muted">Some quick example text to build on the card title and
+                                make
                                 up the bulk
                                 of
                                 the card's content.</p>
@@ -361,7 +452,8 @@
                         <img src="https://picsum.photos/200/150?random=1" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
@@ -372,7 +464,8 @@
                         <img src="https://picsum.photos/200/150?random=2" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
@@ -383,7 +476,8 @@
                         <img src="https://picsum.photos/200/150?random=3" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
@@ -497,10 +591,13 @@
                 <div class="col-md-4 d-flex mt-3">
                     <div class="p-3">
                         <h3 class="display-6 fw-bold">The Newbery Medal winners</h3>
-                        <p>Amina Luqman-Dawson, author of Freewater, has won the 2023 Newbery Medal for excellence in
-                            American children's literature. Learn more about Amina's historical novel and see all the
+                        <p>Amina Luqman-Dawson, author of Freewater, has won the 2023 Newbery Medal for excellence
+                            in
+                            American children's literature. Learn more about Amina's historical novel and see all
+                            the
                             past
-                            winners since 1922. The list includes Kate DiCamillo, Beverly Cleary, and Lois Lowry.</p>
+                            winners since 1922. The list includes Kate DiCamillo, Beverly Cleary, and Lois Lowry.
+                        </p>
                         <button class="btn btn-outline-danger rounded-5 px-3">See the features</button>
                     </div>
                 </div>
@@ -511,7 +608,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -520,7 +618,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -529,7 +628,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -538,7 +638,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -547,7 +648,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -556,7 +658,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -565,7 +668,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -574,7 +678,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -583,7 +688,8 @@
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -601,6 +707,14 @@
         <footer class="alert-danger text-center text-white">
             <!-- Grid container -->
             <div class="container p-4">
+                <section class="d-flex flex-column mb-3 align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-up p-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                    <a class="texdan p-0" href="#top-header" data-cms-ai="0">Back to top</a>
+                </section>
                 <!-- Section: Social media -->
                 <section class="mb-4">
                     <!-- Facebook -->
@@ -825,9 +939,15 @@
 
 
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"
+        integrity="sha512-42PqdZdMz3qHBK8UiE7Oy1h+leKjxsz+dt8l9tnoJz0hZvCtKzW8+SCvNfgWpZX8/cdCIhNwPODcq07fhQWm/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 
 </html>
