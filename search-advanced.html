@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AbeBooks | Shop for Books, Art &amp; Collectibles</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/landing-page/icon-abe.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -13,11 +15,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
         integrity="sha512-Aa5NbVxSAbFWfkaXjXdnIL1Dd7sh4p4OuAtum7KCr5G+uV7Sf2Q8dqosKtbI1+67D4J4VCN01qm4+6BilCjJ/Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/scriptIndex.js"></script>
+
     <style>
         .form-control {
             width: 20rem;
         }
+
+        .navbar-link .container .nav-scroller>nav>a:hover,
+        .navbar-link .container .nav-scroller>nav>a:focus {
+            color: var(--bs-danger);
+            text-decoration: none;
+        }
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +38,7 @@
         <header class="p-3 border-bottom" id="top-header">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="../../index.html"
+                    <a href="./index.html"
                         class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor"
                             class="bi bi-book text-danger" viewBox="0 0 16 16">
@@ -88,11 +101,9 @@
         </div>
     </div>
 
-
-
     <div class="container">
         <div class="row">
-            <div class="col-md-9 bg-danger align-self-start small pl-0">
+            <div class="col-md-9 bg-danger align-self-start small px-0">
                 <div class="breadcrumb-section p-0">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb p-0 bg-white">
@@ -129,20 +140,86 @@
                     </div>
                 </div>
                 <div class="row pt-3 pl-2">
-                    <div class="col-md-3 pr-3 pb-2">
+                    <div class="col-md-3 pr-4">
                         <img src="./assets/images/template/book1.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-9 pl-0">
+                    <div class="col-md-9 pl-0 border-bottom">
                         <div class="book-conver-type">
-                            <h5 class="font-weight-normal mb-0"><span>Hardcover</span></h5>
+                            <h5 class="font-weight-normal my-0"><span>Hardcover</span></h5>
                         </div>
-                        <div class="isbn my-0">
-                            <p class="font-weight-normal"><span>ISBN 10: 059353560X / ISBN 13: 9780593535608</span>
+                        <div class="isbn">
+                            <p class="font-weight-normal my-0"><span>ISBN 10: 059353560X / ISBN 13: 9780593535608</span>
                             </p>
                         </div>
                         <div class="publisher my-0">
-                            <p class="font-weight-normal"><span>Publisher: Knopf, 2023</span>
+                            <p class="font-weight-normal mt-0"><span>Publisher: Knopf, 2023</span>
                             </p>
+                        </div>
+                        <div class="isbn-edition my-0 d-flex pt-3">
+                            <p><span class="glyphicon small pr-1">&#xe080;</span></p>
+                            <a href="" class="link-dark">
+                                <p class="font-weight-normal">View all copies of this ISBN edition:</p>
+                            </a>
+                        </div>
+                        <div class="new-used d-flex">
+                            <div class="new d-flex flex-column rounded-2 bg-light shadow mr-2 col-3 p-3">
+                                <a href="" class="link-dark">
+                                    <div class="link-info">45 New</div>from<span class="link-danger"> US$
+                                        14.44</span>
+                                </a>
+                            </div>
+                            <div class="new d-flex flex-column rounded-2 bg-light shadow mr-2 col-3 p-3">
+                                <a href="" class="link-dark">
+                                    <div class="link-info">45 Used</div>from<span class="link-danger"> US$
+                                        5.26</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <div class="d-block col-6 px-0">
+                                <div class="isbn-edition my-0 d-flex pt-4">
+                                    <p><span class="glyphicon small pr-1">&#xe080;</span></p>
+                                    <a href="" class="link-dark">
+                                        <p class="font-weight-normal">View all formats and editions of this title:</p>
+                                    </a>
+                                </div>
+                                <div class="new-used d-flex">
+                                    <div class="new d-flex flex-column rounded-5 bg-light shadow mr-2 col-6 p-3">
+                                        <a href="" class="link-dark text-decoration-none text-center">
+                                            <div>Softcover (527)</div>
+                                            from <span class="link-danger"> US$ 14.44 </span>
+                                        </a>
+                                    </div>
+                                    <div class="new d-flex flex-column rounded-5 bg-light shadow mr-2 col-6 p-3">
+                                        <a href="" class="link-dark text-decoration-none text-center">
+                                            <div>Hardcover (527)</div>
+                                            from <span class="link-danger"> US$ 14.44 </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block col-6 pr-1">
+                                <div class="isbn-edition my-0 d-flex pt-3">
+                                    <p><span class="glyphicon small pr-1">&#xe080;</span></p>
+                                    <a href="" class="link-dark">
+                                        <p class="font-weight-normal"> View all collectible editions of this title:</p>
+                                    </a>
+                                </div>
+                                <div class="new-used d-flex">
+                                    <div class="new d-flex flex-column rounded-5 bg-light shadow mr-2 col-6 p-3">
+                                        <a href="" class="link-dark text-decoration-none text-center">
+                                            <div>First Edition (527)</div>
+                                            <div>View Offers</div>
+                                        </a>
+                                    </div>
+                                    <div class="new d-flex flex-column rounded-5 bg-light shadow mr-2 col-6 p-3">
+                                        <a href="" class="link-dark text-decoration-none text-center">
+                                            <div>First Edition (527)</div>
+                                            <div>View Offers</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,6 +237,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"
         integrity="sha512-42PqdZdMz3qHBK8UiE7Oy1h+leKjxsz+dt8l9tnoJz0hZvCtKzW8+SCvNfgWpZX8/cdCIhNwPODcq07fhQWm/w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"
+        integrity="sha512-42PqdZdMz3qHBK8UiE7Oy1h+leKjxsz+dt8l9tnoJz0hZvCtKzW8+SCvNfgWpZX8/cdCIhNwPODcq07fhQWm/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 
 </html>
