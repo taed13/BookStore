@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/book-service/pom.xml" />
+        <option value="$PROJECT_DIR$/admins-service/pom.xml" />
+        <option value="$PROJECT_DIR$/articles-service/pom.xml" />
+        <option value="$PROJECT_DIR$/attributes-service/pom.xml" />
+        <option value="$PROJECT_DIR$/bill_shipping-service/pom.xml" />
+        <option value="$PROJECT_DIR$/bill-service/pom.xml" />
+        <option value="$PROJECT_DIR$/categories-service/pom.xml" />
+        <option value="$PROJECT_DIR$/comments-service/pom.xml" />
+        <option value="$PROJECT_DIR$/contacts-service/pom.xml" />
+        <option value="$PROJECT_DIR$/detail_bill-service/pom.xml" />
+        <option value="$PROJECT_DIR$/events-service/pom.xml" />
+        <option value="$PROJECT_DIR$/keywords-service/pom.xml" />
+        <option value="$PROJECT_DIR$/manage_warehouse-service/pom.xml" />
+        <option value="$PROJECT_DIR$/menu-service/pom.xml" />
+        <option value="$PROJECT_DIR$/password_resets-service/pom.xml" />
+        <option value="$PROJECT_DIR$/payments-service/pom.xml" />
+        <option value="$PROJECT_DIR$/product_images-service/pom.xml" />
+        <option value="$PROJECT_DIR$/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/products-attributes-service/pom.xml" />
+        <option value="$PROJECT_DIR$/products_keywords-service/pom.xml" />
+        <option value="$PROJECT_DIR$/products_promotions-service/pom.xml" />
+        <option value="$PROJECT_DIR$/promotions-service/pom.xml" />
+        <option value="$PROJECT_DIR$/province-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ratings-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shipping-service/pom.xml" />
+        <option value="$PROJECT_DIR$/slides-service/pom.xml" />
+        <option value="$PROJECT_DIR$/social_account-service/pom.xml" />
+        <option value="$PROJECT_DIR$/statics-service/pom.xml" />
+        <option value="$PROJECT_DIR$/user_favourite-service/pom.xml" />
+        <option value="$PROJECT_DIR$/users-service/pom.xml" />
+        <option value="$PROJECT_DIR$/warehouse-service/pom.xml" />
+        <option value="$PROJECT_DIR$/payment_method-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shipping_method-service/pom.xml" />
+        <option value="$PROJECT_DIR$/user_promotion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/bill_promotion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shipping_promotion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/carrier-service/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping_cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/notification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/common-service/pom.xml" />
+        <option value="$PROJECT_DIR$/address-servicee/pom.xml" />
+        <option value="$PROJECT_DIR$/author-service/pom.xml" />
+        <option value="$PROJECT_DIR$/product_type-service/pom.xml" />
+        <option value="$PROJECT_DIR$/publisher-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

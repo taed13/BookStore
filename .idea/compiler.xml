@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bill_shipping-service" />
+        <module name="promotions-service" />
+        <module name="user_favourite-service" />
+        <module name="users-service" />
+        <module name="address-servicee" />
+        <module name="menu-service" />
+        <module name="products_keywords-service" />
+        <module name="notification-service" />
+        <module name="author-service" />
+        <module name="product_type-service" />
+        <module name="articles-service" />
+        <module name="product_images-service" />
+        <module name="products_promotions-service" />
+        <module name="carrier-service" />
+        <module name="statics-service" />
+        <module name="discovery-server" />
+        <module name="bill_promotion-service" />
+        <module name="detail_bill-service" />
+        <module name="PBL5_BOOKSTORE" />
+        <module name="payments-service" />
+        <module name="events-service" />
+        <module name="admins-service" />
+        <module name="comments-service" />
+        <module name="slides-service" />
+        <module name="shipping_promotion-service" />
+        <module name="common-service" />
+        <module name="shopping_cart-service" />
+        <module name="warehouse-service" />
+        <module name="payment_method-service" />
+        <module name="product-service" />
+        <module name="user_promotion-service" />
+        <module name="contacts-service" />
+        <module name="bill-service" />
+        <module name="province-service" />
+        <module name="shipping_method-service" />
+        <module name="publisher-service" />
+        <module name="attributes-service" />
+        <module name="categories-service" />
+        <module name="password_resets-service" />
+        <module name="manage_warehouse-service" />
+        <module name="api-gateway" />
+        <module name="products-attributes-service" />
+        <module name="keywords-service" />
+        <module name="ratings-service" />
+        <module name="shipping-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-service" target="17" />
+      <module name="cart-service" target="17" />
+      <module name="oauth_provider-service" target="17" />
+      <module name="promotions_shipping-service" target="17" />
+      <module name="supplieres-service" target="17" />
+      <module name="user_oauth-provider-service" target="17" />
+      <module name="user_oauth_provider-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="address-servicee" options="-parameters" />
+      <module name="admin-service" options="-parameters" />
+      <module name="admins-service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="articles-service" options="-parameters" />
+      <module name="attributes-service" options="-parameters" />
+      <module name="author-service" options="-parameters" />
+      <module name="bill-service" options="-parameters" />
+      <module name="bill_promotion-service" options="-parameters" />
+      <module name="bill_shipping-service" options="-parameters" />
+      <module name="carrier-service" options="-parameters" />
+      <module name="cart-service" options="-parameters" />
+      <module name="categories-service" options="-parameters" />
+      <module name="comments-service" options="-parameters" />
+      <module name="common-service" options="-parameters" />
+      <module name="contacts-service" options="-parameters" />
+      <module name="detail_bill-service" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="events-service" options="-parameters" />
+      <module name="keywords-service" options="-parameters" />
+      <module name="manage_warehouse-service" options="-parameters" />
+      <module name="menu-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="oauth_provider-service" options="-parameters" />
+      <module name="password_resets-service" options="-parameters" />
+      <module name="payment_method-service" options="-parameters" />
+      <module name="payments-service" options="-parameters" />
+      <module name="product-service" options="-parameters" />
+      <module name="product_images-service" options="-parameters" />
+      <module name="product_type-service" options="-parameters" />
+      <module name="products-attributes-service" options="-parameters" />
+      <module name="products_keywords-service" options="-parameters" />
+      <module name="products_promotions-service" options="-parameters" />
+      <module name="promotions-service" options="-parameters" />
+      <module name="promotions_shipping-service" options="-parameters" />
+      <module name="province-service" options="-parameters" />
+      <module name="publisher-service" options="-parameters" />
+      <module name="ratings-service" options="-parameters" />
+      <module name="shipping-service" options="-parameters" />
+      <module name="shipping_method-service" options="-parameters" />
+      <module name="shipping_promotion-service" options="-parameters" />
+      <module name="shopping_cart-service" options="-parameters" />
+      <module name="slides-service" options="-parameters" />
+      <module name="statics-service" options="-parameters" />
+      <module name="supplieres-service" options="-parameters" />
+      <module name="user_favourite-service" options="-parameters" />
+      <module name="user_oauth-provider-service" options="-parameters" />
+      <module name="user_oauth_provider-service" options="-parameters" />
+      <module name="user_promotion-service" options="-parameters" />
+      <module name="users-service" options="-parameters" />
+      <module name="warehouse-service" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/address-servicee/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admins-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/articles-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/articles-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/attributes-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/author-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bill-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bill_promotion-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bill_shipping-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carrier-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/categories-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comments-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/contacts-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detail_bill-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/events-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/keywords-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manage_warehouse-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/menu-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth_provider-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/password_resets-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment_method-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payments-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_images-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_type-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/products-attributes-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/products_keywords-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/products_promotions-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/promotions-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/promotions_shipping-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/province-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/publisher-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ratings-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shipping-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shipping_method-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shipping_promotion-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping_cart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/slides-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/statics-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/supplieres-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_favourite-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_oauth-provider-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_oauth_provider-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_oauth_provider-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_promotion-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/users-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/warehouse-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>
