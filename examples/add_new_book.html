@@ -1,121 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-        name='viewport' />
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <!-- CSS Files -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
-    <link href="../assets/css/demo.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title> -->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+  <link href="../assets/css/demo.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-            <div class="sidebar-wrapper">
-                <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        Cutie Bookstore
-                    </a>
-                </div>
-                <ul class="nav">
-                    <li>
-                        <a class="nav-link" href="./user.html">
-                            <i class="nc-icon nc-chart-pie-35"></i>
-                            <p>Edit Admin Profile</p>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="nc-icon nc-circle-09"></i>
-                            <p>Users</p>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Xem danh sách users</a></li>
-                            <li><a class="dropdown-item" href="#">Thêm user</a></li>
-                            <li><a class="dropdown-item" href="#">Chỉnh sửa user</a></li>
-                            <li><a class="dropdown-item" href="#">Xóa users</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="nc-icon nc-notes"></i>
-                            <p>Books</p>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="booksDropdown">
-                            <a class="dropdown-item" href="#">Xem danh sách sách</a>
-                            <a class="dropdown-item" href="#">Thêm sách</a>
-                            <a class="dropdown-item" href="#">Sửa thông tin sách</a>
-                            <a class="dropdown-item" href="#">Xóa sách</a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a class="nav-link" href="./typography.html">
-                            <i class="nc-icon nc-paper-2"></i>
-                            <p> Ware House </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./icons.html">
-                            <i class="nc-icon nc-atom"></i>
-                            <p>Revenue Statistics</p>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="./maps.html">
-                            <i class="nc-icon nc-pin-3"></i>
-                            <p>Maps</p>
-                        </a>
-                    </li> -->
-                    <li>
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="nc-icon nc-bell-55"></i>
-                            <p>Notifications</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <div class="wrapper">
+    <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
+      <!--
+          Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+      
+          Tip 2: you can also add an image using data-image tag
+          -->
+      <div class="sidebar-wrapper" style="overflow-y: hidden;">
+        <div class="logo">
+          <a href="#" class="simple-text">
+            Cutie Bookstore
+          </a>
         </div>
-        <div class="main-panel">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#pablo"> AdminProfile </a>
-                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-bar burger-lines"></span>
-                        <span class="navbar-toggler-bar burger-lines"></span>
-                        <span class="navbar-toggler-bar burger-lines"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                        <ul class="nav navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link" data-toggle="dropdown">
-                                    <i class="nc-icon nc-palette"></i>
-                                    <span class="d-lg-none">Dashboard</span>
-                                </a>
-                            </li>
-                            <!-- <li class="dropdown nav-item">
+        <ul class="nav">
+          <li>
+            <a class="nav-link" href="./user.html">
+              <i class="nc-icon nc-chart-pie-35"></i>
+              <p>Edit Admin Profile</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="./usermanagement.html">
+              <i class="nc-icon nc-circle-09"></i>
+              <p>Users</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="./listbook.html">
+              <i class="nc-icon nc-notes"></i>
+              <p>Books</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="./ware_house.html">
+              <i class="nc-icon nc-paper-2"></i>
+              <p> Ware House </p>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="./icons.html">
+              <i class="nc-icon nc-atom"></i>
+              <p>Revenue Statistics</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="./notifications.html">
+              <i class="nc-icon nc-bell-55"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#pablo"> AdminProfile </a>
+          <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar burger-lines"></span>
+            <span class="navbar-toggler-bar burger-lines"></span>
+            <span class="navbar-toggler-bar burger-lines"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="dropdown">
+                  <i class="nc-icon nc-palette"></i>
+                  <span class="d-lg-none">Dashboard</span>
+                </a>
+              </li>
+              <!-- <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                     <i class="nc-icon nc-planet"></i>
                                     <span class="notification">5</span>
@@ -135,247 +111,441 @@
                                     <span class="d-lg-block">&nbsp;Search</span>
                                 </a>
                             </li> -->
-                        </ul>
-                        <ul class="navbar-nav ml-auto">
-                            <!-- <li class="nav-item">
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <!-- <li class="nav-item">
                                 <a class="nav-link" href="#pablo">
                                     <span class="no-icon">Account</span>
                                 </a>
                             </li> -->
-                            <ul class="nav">
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#pablo">
-                                    <img src="../assets/img/Ngô Đức Quốc Khánh.jpg"  style="width:50px; height: 50px; border-radius: 50%;" alt="">
-                                  </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="http://example.com"
-                                    id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    User Name
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Change avatar</a>
-                                    <a class="dropdown-item" href="#">Change Password</a>
-                                    <a class="dropdown-item" href="#">Log out</a>
-                                  </div>
-                                </li>
-                              </ul>
-                              
-                        </ul>
-                    </div>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#pablo">
+                    <img src="../assets/img/Ngô Đức Quốc Khánh.jpg"
+                      style="width:50px; height: 50px; border-radius: 50%;" alt="">
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    User Name
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Change avatar</a>
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                  </div>
+                </li>
+              </ul>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <form class="form-horizontal">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>ADD NEW BOOK</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">ID</label>
+            <div class="col-md-4">
+              <input id="id" name="product_id" placeholder="Id" class="form-control input-md" required="" type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">NAME</label>
+            <div class="col-md-4">
+              <input id="name" name="product_id" placeholder="Name" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">SLUG</label>
+            <div class="col-md-4">
+              <input id="slug" name="product_id" placeholder="Slug" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">PRICE</label>
+            <div class="col-md-4">
+              <input id="price" name="product_id" placeholder="Price" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">PRICE_ENTRY</label>
+            <div class="col-md-4">
+              <input id="price_entry" name="product_id" placeholder="Price_Entry" class="form-control input-md"
+                required="" type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">PUBLISHER_ID</label>
+            <div class="col-md-4">
+              <input id="publisher_id" name="product_id" placeholder="Publisher_Id" class="form-control input-md"
+                required="" type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">AUTHOR_ID</label>
+            <div class="col-md-4">
+              <input id="author_id" name="product_id" placeholder="Author_Id" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">PRODUCT_TYPE_ID</label>
+            <div class="col-md-4">
+              <input id="product_type_id" name="product_id" placeholder="Product_Type_Id" class="form-control input-md"
+                required="" type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">SALE</label>
+            <div class="col-md-4">
+              <input id="sale" name="product_id" placeholder="Sale" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">EXPIRATION_DATE</label>
+            <div class="col-md-4">
+              <input id="expiration_date" name="product_id" placeholder="Expiration_Date" class="form-control input-md"
+                required="" type="date">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">VIEW</label>
+            <div class="col-md-4">
+              <input id="view" name="product_id" placeholder="view" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">EXPIRATION</label>
+            <div class="col-md-4">
+              <input id="expiration" name="product_id" placeholder="Expiration" class="form-control input-md"
+                required="" type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">ACTIVE</label>
+            <div class="col-md-4">
+              <input id="active" name="product_id" placeholder="Active" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_description">DESCRIPTION</label>
+            <div class="col-md-4">
+              <textarea class="form-control" id="description" name="product_description"></textarea>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_name_fr">CONTENT</label>
+            <div class="col-md-4">
+              <textarea class="form-control" id="content" name="product_name_fr"></textarea>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">REVIEW_TOTAL</label>
+            <div class="col-md-4">
+              <input id="review_total" name="product_id" placeholder="Review_Total" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">REVIEW_STAR</label>
+            <div class="col-md-4">
+              <input id="review_star" name="product_id" placeholder="Review_Star" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">AGE_REVIEW</label>
+            <div class="col-md-4">
+              <input id="age_review" name="product_id" placeholder="Age_Review" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">NUMBER</label>
+            <div class="col-md-4">
+              <input id="number" name="product_id" placeholder="Number" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">IMPORT_GOODS</label>
+            <div class="col-md-4">
+              <input id="import_goods" name="product_id" placeholder="Import_Goods" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">NUMBER_IMPORT</label>
+            <div class="col-md-4">
+              <input id="number_import" name="product_id" placeholder="Number_Import" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">RESISTANT</label>
+            <div class="col-md-4">
+              <input id="resistant" name="product_id" placeholder="Resistant" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">Energy</label>
+            <div class="col-md-4">
+              <input id="energy" name="product_id" placeholder="Energy" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">COUNTRY_CODE</label>
+            <div class="col-md-4">
+              <input id="country_code" name="product_id" placeholder="Country_Code" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">SOLD_QUANTITY</label>
+            <div class="col-md-4">
+              <input id="sold_quantity" name="product_id" placeholder="Sold_Quantity" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">PUBLISHED_DATE</label>
+            <div class="col-md-4">
+              <input id="published_date" name="product_id" placeholder="Published_Date" class="form-control input-md" required=""
+                type="date">
+
+            </div>
+          </div>
+
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">CONDITION</label>
+            <div class="col-md-4">
+              <input id="condition" name="product_id" placeholder="Condition" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="product_id">BINDING</label>
+            <div class="col-md-4">
+              <input id="binding" name="product_id" placeholder="Binding" class="form-control input-md" required=""
+                type="text">
+
+            </div>
+          </div>
+         
+              <!-- File Button -->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="filebutton">AVATAR</label>
+                <div class="col-md-4">
+                  <input id="avatar" name="filebutton" class="input-file" type="file">
                 </div>
-            </nav>
-            <!-- End Navbar -->
-            
-<form class="form-horizontal">
-    <fieldset>
-    
-    <!-- Form Name -->
-    <legend>ADD NEW PRODUCTS</legend>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_id">PRODUCT ID</label>  
-      <div class="col-md-4">
-      <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>  
-      <div class="col-md-4">
-      <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_name_fr">PRODUCT DESCRIPTION FR</label>  
-      <div class="col-md-4">
-      <input id="product_name_fr" name="product_name_fr" placeholder="PRODUCT DESCRIPTION FR" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Select Basic -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
-      <div class="col-md-4">
-        <select id="product_categorie" name="product_categorie" class="form-control">
-        </select>
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="available_quantity">AVAILABLE QUANTITY</label>  
-      <div class="col-md-4">
-      <input id="available_quantity" name="available_quantity" placeholder="AVAILABLE QUANTITY" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_weight">PRODUCT WEIGHT</label>  
-      <div class="col-md-4">
-      <input id="product_weight" name="product_weight" placeholder="PRODUCT WEIGHT" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Textarea -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_description">PRODUCT DESCRIPTION</label>
-      <div class="col-md-4">                     
-        <textarea class="form-control" id="product_description" name="product_description"></textarea>
-      </div>
-    </div>
-    
-    <!-- Textarea -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="product_name_fr">PRODUCT DESCRIPTION FR</label>
-      <div class="col-md-4">                     
-        <textarea class="form-control" id="product_name_fr" name="product_name_fr"></textarea>
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="percentage_discount">PERCENTAGE DISCOUNT</label>  
-      <div class="col-md-4">
-      <input id="percentage_discount" name="percentage_discount" placeholder="PERCENTAGE DISCOUNT" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="stock_alert">STOCK ALERT</label>  
-      <div class="col-md-4">
-      <input id="stock_alert" name="stock_alert" placeholder="STOCK ALERT" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Search input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="stock_critical">STOCK CRITICAL</label>
-      <div class="col-md-4">
-        <input id="stock_critical" name="stock_critical" placeholder="STOCK CRITICAL" class="form-control input-md" required="" type="search">
-        
-      </div>
-    </div>
-    
-    <!-- Search input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="tutorial">TUTORIAL</label>
-      <div class="col-md-4">
-        <input id="tutorial" name="tutorial" placeholder="TUTORIAL" class="form-control input-md" required="" type="search">
-        
-      </div>
-    </div>
-    
-    <!-- Search input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="tutorial_fr">TUTORIAL FR</label>
-      <div class="col-md-4">
-        <input id="tutorial_fr" name="tutorial_fr" placeholder="TUTORIAL FR" class="form-control input-md" required="" type="search">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="online_date">ONLINE DATE</label>  
-      <div class="col-md-4">
-      <input id="online_date" name="online_date" placeholder="ONLINE DATE" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="author">AUTHOR</label>  
-      <div class="col-md-4">
-      <input id="author" name="author" placeholder="AUTHOR" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="enable_display">ENABLE DISPLAY</label>  
-      <div class="col-md-4">
-      <input id="enable_display" name="enable_display" placeholder="ENABLE DISPLAY" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="comment">COMMENT</label>  
-      <div class="col-md-4">
-      <input id="comment" name="comment" placeholder="COMMENT" class="form-control input-md" required="" type="text">
-        
-      </div>
-    </div>
-    
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="approuved_by">APPROUVED BY</label>  
-      <div class="col-md-4">
-      <input id="approuved_by" name="approuved_by" placeholder="APPROUVED BY" class="form-control input-md" required="" type="text">
-        
-     <!-- File Button --> 
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="filebutton">main_image</label>
-      <div class="col-md-4">
-        <input id="filebutton" name="filebutton" class="input-file" type="file">
-      </div>
-    </div>
-    <!-- File Button --> 
-    <!-- <div class="form-group">
+              </div>
+              <!-- File Button -->
+              <!-- <div class="form-group">
       <label class="col-md-4 control-label" for="filebutton">auxiliary_images</label>
       <div class="col-md-4">
         <input id="filebutton" name="filebutton" class="input-file" type="file">
       </div>
     </div> -->
-    
-    <!-- Button -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="singlebutton">Confirm</label>
-      <div class="col-md-4">
-        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
-      </div>
-      </div>
-    
-    </fieldset>
-    </form>
-    
-<!--   Core JS Files   -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="../assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!--  Chartist Plugin  -->
-<script src="../assets/js/plugins/chartist.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="../assets/js/plugins/bootstrap-notify.js"></script>
-<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
-<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
-<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
-<script src="../assets/js/demo.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton">Confirm</label>
+                <div class="col-md-4">
+                  <button id="singlebutton" onclick="postData()" name="" type="button"
+                    class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+        </fieldset>
+      </form>
+
+
+      <!--   Core JS Files   -->
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+      <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+      <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+      <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+      <script src="../assets/js/plugins/bootstrap-switch.js"></script>
+      <!--  Google Maps Plugin    -->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+      <!--  Chartist Plugin  -->
+      <script src="../assets/js/plugins/chartist.min.js"></script>
+      <!--  Notifications Plugin    -->
+      <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+      <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+      <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+      <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+      <script src="../assets/js/demo.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script>
+
+
+        function postData() {
+          console.log("123");
+          const id = document.getElementById('id').value;
+          const name = document.getElementById('name').value;
+          const price = document.getElementById('price').value;
+          const slug = document.getElementById('slug').value;
+          const price_entry = document.getElementById('price_entry').value;
+          const publisher_id = document.getElementById('publisher_id').value;
+          const author_id = document.getElementById('author_id').value;
+          const product_type_id = document.getElementById('product_type_id').value;
+          const sale = document.getElementById('sale').value;
+          const expiration_date = document.getElementById('expiration_date').value;
+          const view = document.getElementById('view').value;
+          const expiration =  document.getElementById('expiration').value;
+          const active = document.getElementById('active').value;
+          const description = document.getElementById('description').value;
+          const content = document.getElementById('content').value;
+          const avatar = document.getElementById('avatar').value;
+          const review_total = document.getElementById('review_total').value;
+          const review_star = document.getElementById('review_star').value;
+          const age_review = document.getElementById('age_review').value;
+          const number = document.getElementById('number').value;
+          const import_goods = document.getElementById('import_goods').value;
+          const condition = document.getElementById('condition').value;
+          const binding = document.getElementById('binding').value;
+          const number_import = document.getElementById('number_import').value;
+          const resistant = document.getElementById('resistant').value;
+          const energy = document.getElementById('energy').value;
+          const country_code = document.getElementById('country_code').value;
+          const sold_quantity = document.getElementById('sold_quantity').value;
+          const published_date = document.getElementById('published_date').value;
+
+          const data = {
+            id: id,
+            name: name,
+            price: price,
+            slug: slug,
+            price_entry: price_entry,
+            publisher_id: publisher_id,
+            author_id: author_id,
+            product_type_id: product_type_id,
+            sale: sale,
+            expiration_date: expiration_date,
+            view: view,
+            expiration: expiration,
+            active: active,
+            description: description,
+            content: content,
+            avatar: avatar,
+            review_total: review_total,
+            review_star: review_star,
+            age_review: age_review,
+            number: number,
+            import_goods: import_goods,
+            condition: condition,
+            binding: binding,
+            number_import: number_import,
+            resistant: resistant,
+            energy: energy,
+            country_code: country_code,
+            sold_quantity: sold_quantity,
+            published_date: published_date,
+            
+          };
+          axios.post('https://jsonplaceholder.typicode.com/posts', data)
+            .then(function (response) {
+              console.log(response);
+              if (response.data.success) {
+                alert('Đăng nhập thành công');
+              } else {
+                alert('Đăng nhập thất bại');
+              }
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+
+        };
+      </script>
+
 </html>

@@ -25,13 +25,13 @@
     <div class="wrapper">
         <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
             <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-            <div class="sidebar-wrapper">
+              Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+          
+              Tip 2: you can also add an image using data-image tag
+              -->
+            <div class="sidebar-wrapper" style="overflow-y: hidden;">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
+                    <a href="#" class="simple-text">
                         Cutie Bookstore
                     </a>
                 </div>
@@ -42,36 +42,20 @@
                             <p>Edit Admin Profile</p>
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li>
+                        <a class="nav-link" href="./usermanagement.html">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>Users</p>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Xem danh sách users</a></li>
-                            <li><a class="dropdown-item" href="#">Thêm user</a></li>
-                            <li><a class="dropdown-item" href="#">Chỉnh sửa user</a></li>
-                            <li><a class="dropdown-item" href="#">Xóa users</a></li>
-                        </ul>
                     </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li>
+                        <a class="nav-link" href="./listbook.html">
                             <i class="nc-icon nc-notes"></i>
                             <p>Books</p>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="booksDropdown">
-                            <a class="dropdown-item" href="#">Xem danh sách sách</a>
-                            <a class="dropdown-item" href="#">Thêm sách</a>
-                            <a class="dropdown-item" href="#">Sửa thông tin sách</a>
-                            <a class="dropdown-item" href="#">Xóa sách</a>
-                        </div>
                     </li>
-
                     <li>
-                        <a class="nav-link" href="./typography.html">
+                        <a class="nav-link" href="./ware_house.html">
                             <i class="nc-icon nc-paper-2"></i>
                             <p> Ware House </p>
                         </a>
@@ -82,12 +66,6 @@
                             <p>Revenue Statistics</p>
                         </a>
                     </li>
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="./maps.html">
-                            <i class="nc-icon nc-pin-3"></i>
-                            <p>Maps</p>
-                        </a>
-                    </li> -->
                     <li>
                         <a class="nav-link" href="./notifications.html">
                             <i class="nc-icon nc-bell-55"></i>
@@ -162,25 +140,25 @@
                                         <div class="col-lg-6 px-xl-10">
                                             <div
                                                 class="bg-secondary d-lg-inline-block py-1-5 px-1-5 px-sm-6 mb-1-4 rounded">
-                                                <h3 class="h2 text-white mb-0 ">Tên Sách</h3>
+                                                <h3 class="h2 text-white mb-0 " id="book_name">Tên Sách</h3>
                                                 <!-- <span class="text-primary">Coach</span> -->
                                             </div>
                                             <ul class="list-unstyled mb-1-9">
-                                                <li class="mb-2 mb-xl-3 display-28"><span
-                                                        class="display-26 text-secondary me-2 font-weight-600">Giá</span>
+                                                <li class="mb-2 mb-xl-3 display-28" id="price"><span
+                                                        class="display-26 text-secondary me-2 font-weight-600">Giá:  </span>
                                                     20.000đ</li>
                                                 <li class="mb-2 mb-xl-3 display-28"><span
-                                                        class="display-26 text-secondary me-2 font-weight-600">Tác
-                                                        giả</span> 033481264</li>
+                                                        class="display-26 text-secondary me-2 font-weight-600" id="author">Tác
+                                                        giả:  </span> 033481264</li>
                                                 <li class="mb-2 mb-xl-3 display-28"><span
-                                                        class="display-26 text-secondary me-2 font-weight-600">Nhà xuất
-                                                        bản</span> Hehehe</li>
+                                                        class="display-26 text-secondary me-2 font-weight-600" id="publisher">Nhà xuất
+                                                        bản: </span> Hehehe</li>
                                                 <li class="mb-2 mb-xl-3 display-28"><span
-                                                        class="display-26 text-secondary me-2 font-weight-600">Lượt
-                                                        mua</span> hehehe</li>
+                                                        class="display-26 text-secondary me-2 font-weight-600" id="purchases">Lượt
+                                                        mua:  </span> hehehe</li>
                                                 <li class="display-28"><span
-                                                        class="display-26 text-secondary me-2 font-weight-600">Updated
-                                                        At</span> 507 - 541 - </li>
+                                                        class="display-26 text-secondary me-2 font-weight-600" id="updated_at">Updated
+                                                        At:  </span> 507 - 541 - </li>
 
                                                 <li>
                                                     <table class="table table-borderless">
@@ -235,5 +213,30 @@
             <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
             <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
             <script src="../assets/js/demo.js"></script>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script>
+
+                function fetchBookDetails() {
+                    console.log('fetchUserDetails');
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const bookId = urlParams.get('id');
+
+                    axios.get(`https://jsonplaceholder.typicode.com/users/${bookId}`)
+                        .then(function (response) {
+                            const userData = response.data;
+                            document.getElementById('book_name').innerHTML = userData.name;
+                            document.getElementById('price').innerHTML = userData.price;
+                            document.getElementById('author').innerHTML = userData.author;
+                            document.getElementById('publisher').innerHTML = userData.publisher;
+                            document.getElementById('purchases').innerHTML = userData.purchases;
+                            document.getElementById('updated_at').innerHTML = userData.updated_at;
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                            // Xử lý hoặc thông báo lỗi cho người dùng
+                        });
+                }
+                fetchBookDetails();
+            </script>
 
 </html>

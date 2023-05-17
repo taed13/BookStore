@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
+  <!-- <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title> -->
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
     name='viewport' />
   <!--     Fonts and icons     -->
@@ -25,12 +25,12 @@
     <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
+    
         Tip 2: you can also add an image using data-image tag
-    -->
-      <div class="sidebar-wrapper">
+        -->
+      <div class="sidebar-wrapper" style="overflow-y: hidden;">
         <div class="logo">
-          <a href="http://www.creative-tim.com" class="simple-text">
+          <a href="#" class="simple-text">
             Cutie Bookstore
           </a>
         </div>
@@ -41,36 +41,20 @@
               <p>Edit Admin Profile</p>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+          <li>
+            <a class="nav-link" href="./usermanagement.html">
               <i class="nc-icon nc-circle-09"></i>
               <p>Users</p>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Xem danh sách users</a></li>
-              <li><a class="dropdown-item" href="#">Thêm user</a></li>
-              <li><a class="dropdown-item" href="#">Chỉnh sửa user</a></li>
-              <li><a class="dropdown-item" href="#">Xóa users</a></li>
-            </ul>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+          <li>
+            <a class="nav-link" href="./listbook.html">
               <i class="nc-icon nc-notes"></i>
               <p>Books</p>
             </a>
-            <div class="dropdown-menu" aria-labelledby="booksDropdown">
-              <a class="dropdown-item" href="#">Xem danh sách sách</a>
-              <a class="dropdown-item" href="#">Thêm sách</a>
-              <a class="dropdown-item" href="#">Sửa thông tin sách</a>
-              <a class="dropdown-item" href="#">Xóa sách</a>
-            </div>
           </li>
-
           <li>
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="./ware_house.html">
               <i class="nc-icon nc-paper-2"></i>
               <p> Ware House </p>
             </a>
@@ -81,12 +65,6 @@
               <p>Revenue Statistics</p>
             </a>
           </li>
-          <!-- <li class="nav-item active">
-                        <a class="nav-link" href="./maps.html">
-                            <i class="nc-icon nc-pin-3"></i>
-                            <p>Maps</p>
-                        </a>
-                    </li> -->
           <li>
             <a class="nav-link" href="./notifications.html">
               <i class="nc-icon nc-bell-55"></i>
@@ -175,11 +153,11 @@
       <div class="container mt-3 mb-10">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <form class="form-inline">
+            <form class="form-inline pb-3">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-            <button class="btn btn-primary btn1" >Add User</button>
+            <button class="btn btn-primary btn1">Add User</button>
           </div>
         </div>
 
@@ -204,7 +182,7 @@
                         <div class="candidate-list-details">
                           <div class="candidate-list-info">
                             <div class="candidate-list-title">
-                              <h5 class="mb-0"><a href="#">Brooke Kelly</a></h5>
+                              <h5 class="mb-0" id="name"><a href="#">Brooke Kelly</a></h5>
                             </div>
                             <div class="candidate-list-option">
                               <ul class="list-unstyled">
@@ -216,14 +194,17 @@
                         </div>
                       </td>
                       <td class="candidate-list-favourite-time text-center">
-                        <a class="candidate-list-favourite order-2 text-danger" href="#"><i
-                            class="fas fa-heart"></i></a>
-                        <span class="candidate-list-time order-1">Shortlisted</span>
+                        <span class="candidate-list-time order-1" id="created_at">12/01/2023</span>
                       </td>
                       <td>
                         <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                          <li><a href="./details_user.html" class="text-primary" data-toggle="tooltip" title=""
-                              data-original-title="view"><i class="far fa-eye"></i></a></li>
+                          <li>
+                            <a class="text-primary" data-toggle="tooltip" title="view" data-original-title="view"
+                              onclick="redirectDetails()">
+                              <i class="far fa-eye"></i>
+                            </a>
+                          </li>
+
                           <li><a href="#" class="text-info" data-toggle="tooltip" title="" data-original-title="Edit"><i
                                 class="fas fa-pencil-alt"></i></a></li>
                           <li><a href="#" class="text-danger" data-toggle="tooltip" title=""
@@ -231,7 +212,7 @@
                         </ul>
                       </td>
                     </tr>
-                    <tr class="candidates-list">
+                    <!-- <tr class="candidates-list">
                       <td class="title">
                         <div class="thumb">
                           <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
@@ -370,7 +351,7 @@
                               data-original-title="Delete"><i class="far fa-trash-alt"></i></a></li>
                         </ul>
                       </td>
-                    </tr>
+                    </tr> -->
                   </tbody>
                 </table>
                 <div class="text-center mt-3 mt-sm-3">
@@ -390,7 +371,49 @@
           </div>
         </div>
       </div>
-      <!--   Core JS Files   -->
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script>
+
+        function getData() {
+          const nameInput = document.getElementById('name');
+          const created_atInput = document.getElementById('created_at');
+          axios.get('https://jsonplaceholder.typicode.com/posts')
+            .then(function (response) {
+              const data = response.data;
+              nameInput.innerHTML = data[0].id;
+              created_atInput.innerHTML = data[0].title;
+              if (response.data.success) {
+
+                window.location.href = 'http://localhost:3000';
+              } else {
+
+              }
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+
+        };
+        function redirectDetails() {
+          console.log('redirectDetails');
+          axios.get('https://jsonplaceholder.typicode.com/posts')
+            .then(function (response) {
+              const userId = response.data[0].id;
+              if (response.status === 200) {
+
+                window.location.href = `/details_user?id=${userId}`;
+              } else {
+
+              }
+
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+
+        };
+
+      </script>
       <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
